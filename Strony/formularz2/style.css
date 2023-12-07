@@ -1,0 +1,59 @@
+body{
+    background-color:#AAA;
+  }
+  .lewy {
+    float:left;
+    background-color: grey;
+  }
+  .prawy {
+  float:right;
+     background-color:grey;
+  }
+  
+  .lewy , .prawy {
+    color:#fff;
+      border: 1px solid black;
+      border-radius:5px;
+    padding:5px;
+    width:45%;
+  }
+  .lewy input , .prawy input {
+    margin:1%;
+    width:95%;
+  }
+  .guzik {
+    background-color:#ABC;
+    width:100%;
+    color: #222;
+  }
+  
+  .guzik , .lewy input , .prawy input {
+    padding:5px;
+    border:2px solid black;
+    border-radius:5px;
+    color:#111;
+  }
+  input{
+  background-color:#CBA;
+  }
+  select{
+    background-color:#CBA;
+  }
+  select:hover {
+    background-color:#BAC;
+  }
+  
+  .lewy input:hover , .prawy input:hover, 
+  .lewy input:active , .prawy input:active {
+      background-color:#BAC;
+      color:#fff;
+  } 
+  .lewy input:focus , .prawy input:focus, 
+  .lewy input:active , .prawy input:active {
+      background-color:#CAB;
+      color:#fff;
+    
+  } 
+  button:hover,button:active{
+    background-color:#BAC;
+  }

@@ -1,0 +1,10 @@
+
+.col-7, .col-3 , .col-2{
+    background-color:#666;
+    
+  }
+  .container{
+   background-color: black;
+    min-height:500px;
+    max-height:1000px;
+  }

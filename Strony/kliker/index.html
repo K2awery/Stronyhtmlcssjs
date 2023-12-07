@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  	<meta charset="utf-8" />
+  	<title>Kliker</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        *{
+            margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        }
+    body{
+        background-color: rgb(27, 27, 27);
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+    }
+    #sr{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    #pp{
+    position: relative;
+    height: 180px;
+width: 180px;
+    margin: 0 50px;
+        background: linear-gradient(rgb(0, 238, 255),rgb(255, 0, 234),rgb(230, 255, 7));
+        border-radius: 50%;
+       
+    }
+
+    
+ 
+    #przycisk{
+background-color: black;
+position: absolute;
+      left: 3%;
+      top: 3%;
+        height: 170px;
+width: 170px;
+border-radius: 50%;
+color: white;
+font-family: 'Press Start 2P', cursive;
+font-size: 30px;
+
+}
+#l{
+   
+    height: 60px;
+width: 180px;
+    margin: 0 50px;
+        background: linear-gradient(rgb(0, 238, 255),rgb(255, 0, 234),rgb(230, 255, 7));
+        border-radius: 50px;
+        
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center
+    }
+    #liczba{
+        padding: 4px;
+        left: 3%;
+      top: 3%;
+background-color: black;
+
+        height: 50px;
+width: 170px;
+border-radius: 50px;
+color: white;
+font-family: 'Press Start 2P', cursive;
+font-size: 20px;
+
+}
+#tekst{
+width: 100px;
+font-family: 'Press Start 2P', cursive;
+text-align: center;
+background-color: black;
+color: white;
+border: 0px;
+outline:none;
+
+}
+
+#baner{
+    margin-top: 0px;
+background-color: black;
+width: auto;
+color: white;
+font-family: 'Press Start 2P', cursive;
+padding: 30px;
+
+
+}
+
+    </style>
+</head>
+<body>
+    <div id="baner">101 kliknięć wygrana</div>
+	<div id="sr">
+        <div id="pp"><button id="przycisk" onclick="funkcja()">Klik</button></div>
+    </div>
+    <div id="l"><p id="liczba">kliki<input type="text" id="tekst" readonly></p></div>
+<script>
+function funkcja(){
+    tekst=document.getElementById("tekst");
+	guzik=document.getElementById("guzik");
+	cialo=document.getElementById("cialo");
+    wypluwacz=document.getElementById("wypluwacz");
+	 a =  tekst.value++;
+     
+
+    
+   if (a>99){
+
+    alert("Wygrałeś oto nagroda https://www.youtube.com/watch?v=dQw4w9WgXcQ ");
+   }
+}
+
+
+
+
+</script>
+</body>
+</html>

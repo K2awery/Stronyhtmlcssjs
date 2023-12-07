@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<Title>stronatest</Title>
+
+</head>
+<body>
+     <script>
+     labels = ["imie","naziwsko","pole","cos","wiek"];
+        wym = labels.length;
+        for(i=0;i<wym;i++) { 
+           document.body.innerHTML += labels[i]+":<input type='text' id='"+labels[i]+"'><br>"; 
+        }
+        document.body.innerHTML += "<button onclick='funkcja()'>knefel</button>";
+        document.body.innerHTML += "<div id='wypluwacz'>tekst</div>";
+        
+        function funkcja() {
+      
+        dane = "imie:";
+        dane += imie;
+        dane += "<br>";
+        dane += "nazwisko:";
+        dane += naziwsko;
+        dane += "<br>";
+        dane += pole; 
+        dane += "<br>";
+        dane += cos;
+        dane += "<br>";
+        dane += wiek; 
+        document.getElementById("wypluwacz").innerHTML = dane;
+        }
+        </script>
+</body>
+</html>
